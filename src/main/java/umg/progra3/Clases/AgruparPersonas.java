@@ -1,12 +1,16 @@
 package umg.progra3.Clases;
 
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class AgruparPersonas {
+
+    public static void EjecutarAgruparPersonas(){
+        // Ejercicio 2 - Agrupar Personas
+        int[] GroupSizes  = new int[]{3,3,3,3,3,1,3};
+        System.out.println("\nEntrada:" + Arrays.toString(GroupSizes));
+        System.out.println("Salida: "+"["+Resultado(GroupSizes)+"]");
+    }
 
     public static String Resultado(int[] GroupSizes) {
         Map<Integer, List<Integer>> map = new HashMap<>();

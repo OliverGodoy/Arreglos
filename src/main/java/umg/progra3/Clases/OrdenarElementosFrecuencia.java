@@ -1,6 +1,17 @@
 package umg.progra3.Clases;
 
+import java.util.Arrays;
+
 public class OrdenarElementosFrecuencia {
+
+    public static void EjecutarOrdenarElementosFrecuencia(){
+        // Ejercicio 4 - Ordenar Elementos por Frecuencia
+        int[] nums2 = new int[]{4, 3, 1, 6, 3, 4, 4, 6};
+        System.out.println("\nEntrada:" + Arrays.toString(nums2));
+        System.out.println("Salida:");
+        ElementosOrdenados(nums2);
+    }
+
 
     public static void ElementosOrdenados(int[] nums2){
         // Encontrar el valor máximo en el arreglo

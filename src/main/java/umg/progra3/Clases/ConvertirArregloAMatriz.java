@@ -4,6 +4,19 @@ import java.util.*;
 
 public class ConvertirArregloAMatriz {
 
+    public static void EjecutarConvertirArregloAMatriz(){
+        // Ejercicio 3 - Convertir Arreglo a Matriz
+        int[] nums = new int[]{1,3,4,1,2,3,1};
+        System.out.println("\nEntrada:" + Arrays.toString(nums));
+
+        List<List<Integer>> resultado = construirMatriz(nums);
+        // Imprimir la matriz resultante
+        System.out.println("Salida:");
+        for (List<Integer> fila : resultado) {
+            System.out.println(fila);
+        }
+    }
+
     public static List<List<Integer>> construirMatriz(int[] nums) {
         // Paso 1: Contar las ocurrencias de cada número
         Map<Integer, Integer> contador = new HashMap<>();

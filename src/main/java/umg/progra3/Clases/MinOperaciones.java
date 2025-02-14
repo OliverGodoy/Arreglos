@@ -1,6 +1,17 @@
 package umg.progra3.Clases;
 
+import java.util.Arrays;
+
 public class MinOperaciones {
+
+    public static void EjecutarMinOperaciones(){
+        // Ejercicio 1 - Min Operaciones
+        String boxes = "001011";
+        System.out.println("Entrada: " + boxes);
+        int[] resultado = minOperations(boxes);
+        System.out.println("Salida: " + Arrays.toString(resultado));
+    }
+
     public static int[] minOperations(String boxes) {
         int n = boxes.length();
         int[] answer = new int[n];
