@@ -1,8 +1,14 @@
 package umg.progra3.ejercicios;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import umg.progra3.Main;
+
 import java.util.*;
 
+
 public class EjercicioArray {
+    private static final Logger logger = LogManager.getLogger(EjercicioArray.class);
 
     //Ejercicio 1
     public  static void EjecutarArray(){
@@ -12,8 +18,9 @@ public class EjercicioArray {
         matriz.add(List.of(1, 9, 5));
 
         int maxRiqueza = ejercicioArray(matriz);
-        System.out.println("La riqueza del cliente más rico es: " + maxRiqueza);
+        logger.info("La riqueza del cliente más rico es: " + maxRiqueza);
     }
+
 
     public static int ejercicioArray(List<List<Integer>> matriz){
         int maxRiqueza = 0;
@@ -45,12 +52,12 @@ public class EjercicioArray {
         matrizDiagonal.add(List.of(2, 2, 1, 2));
         matrizDiagonal.add(List.of(1, 1, 1, 2));
 
-        System.out.println("Matriz original:");
+        logger.info("Matriz original:");
         imprimirMatriz(matrizDiagonal);
 
         List<List<Integer>> matrizOrdenada = Diagonal(matrizDiagonal);
 
-        System.out.println("\nMatriz con diagonales ordenadas:");
+        logger.info("\nMatriz con diagonales ordenadas:");
         imprimirMatriz(matrizOrdenada);
     }
 
@@ -140,7 +147,7 @@ public class EjercicioArray {
         matSuma.add(List.of(7, 8, 9));
 
         int suma =  ejercicioSuma(matSuma);
-        System.out.println("La suma de los elementos es: " + suma);
+        logger.info("La suma de los elementos es: " + suma);
 
     }
 

@@ -1,17 +1,22 @@
 package umg.progra3.Clases;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+
 import java.util.*;
 
 public class ConvertirArregloAMatriz {
+    private static final Logger logger = LogManager.getLogger(ConvertirArregloAMatriz.class);
 
     public static void EjecutarConvertirArregloAMatriz(){
         // Ejercicio 3 - Convertir Arreglo a Matriz
         int[] nums = new int[]{1,3,4,1,2,3,1};
-        System.out.println("\nEntrada:" + Arrays.toString(nums));
+        logger.info("\nEntrada:" + Arrays.toString(nums));
 
         List<List<Integer>> resultado = construirMatriz(nums);
         // Imprimir la matriz resultante
-        System.out.println("Salida:");
+        logger.info("Salida:");
         for (List<Integer> fila : resultado) {
             System.out.println(fila);
         }

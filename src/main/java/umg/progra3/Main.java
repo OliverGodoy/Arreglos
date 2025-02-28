@@ -1,22 +1,30 @@
 package umg.progra3;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import umg.progra3.ejercicios.EjercicioArray;
 
 import static umg.progra3.Clases.AgruparPersonas.EjecutarAgruparPersonas;
 import static umg.progra3.Clases.ConvertirArregloAMatriz.EjecutarConvertirArregloAMatriz;
 import static umg.progra3.Clases.MinOperaciones.EjecutarMinOperaciones;
 import static umg.progra3.Clases.OrdenarElementosFrecuencia.EjecutarOrdenarElementosFrecuencia;
-import static umg.progra3.ejercicios.EjercicioArray.*;
+
 
 public class Main {
+    private static final Logger logger = LogManager.getLogger(Main.class);
 
     public static void main(String[] args) {
-//        EjecutarMinOperaciones();
-//        EjecutarAgruparPersonas();
-//        EjecutarConvertirArregloAMatriz();
-//        EjecutarOrdenarElementosFrecuencia();
+        logger.debug("Mensaje de depuración");
+        logger.warn("Mensaje de advertencia");
+        logger.error("Mensaje de error");
 
-        //EjecutarArray();
-       // EjecutarSuma();
-        EjecutarDiagonal();
+        // EjecutarMinOperaciones();
+        // EjecutarAgruparPersonas();
+        // EjecutarConvertirArregloAMatriz();
+        // EjecutarOrdenarElementosFrecuencia();
+
+        // EjecutarArray();
+        // EjecutarSuma();
+        // EjecutarDiagonal();
     }
 }

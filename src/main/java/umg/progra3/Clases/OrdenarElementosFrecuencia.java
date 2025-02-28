@@ -1,14 +1,19 @@
 package umg.progra3.Clases;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+
 import java.util.Arrays;
 
 public class OrdenarElementosFrecuencia {
+    private static final Logger logger = LogManager.getLogger(OrdenarElementosFrecuencia.class);
 
     public static void EjecutarOrdenarElementosFrecuencia(){
         // Ejercicio 4 - Ordenar Elementos por Frecuencia
         int[] nums2 = new int[]{4, 3, 1, 6, 3, 4, 4, 6};
-        System.out.println("\nEntrada:" + Arrays.toString(nums2));
-        System.out.println("Salida:");
+        logger.info("\nEntrada:" + Arrays.toString(nums2));
+        logger.info("Salida:");
         ElementosOrdenados(nums2);
     }
 

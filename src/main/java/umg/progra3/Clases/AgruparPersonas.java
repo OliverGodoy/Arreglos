@@ -1,15 +1,20 @@
 package umg.progra3.Clases;
 
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+
 import java.util.*;
 
 public class AgruparPersonas {
+    private static final Logger logger = LogManager.getLogger(AgruparPersonas.class);
 
     public static void EjecutarAgruparPersonas(){
         // Ejercicio 2 - Agrupar Personas
         int[] GroupSizes  = new int[]{3,3,3,3,3,1,3};
-        System.out.println("\nEntrada:" + Arrays.toString(GroupSizes));
-        System.out.println("Salida: "+"["+Resultado(GroupSizes)+"]");
+        logger.info("\nEntrada:" + Arrays.toString(GroupSizes));
+        logger.info("Salida: "+"["+Resultado(GroupSizes)+"]");
     }
 
     public static String Resultado(int[] GroupSizes) {
