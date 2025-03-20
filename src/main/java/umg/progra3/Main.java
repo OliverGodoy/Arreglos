@@ -8,15 +8,16 @@ import static umg.progra3.Clases.AgruparPersonas.EjecutarAgruparPersonas;
 import static umg.progra3.Clases.ConvertirArregloAMatriz.EjecutarConvertirArregloAMatriz;
 import static umg.progra3.Clases.MinOperaciones.EjecutarMinOperaciones;
 import static umg.progra3.Clases.OrdenarElementosFrecuencia.EjecutarOrdenarElementosFrecuencia;
+import static umg.progra3.ejercicios.EjercicioArray.EjecutarDiagonal;
 
 
 public class Main {
     private static final Logger logger = LogManager.getLogger(Main.class);
 
     public static void main(String[] args) {
-        logger.debug("Mensaje de depuración");
-        logger.warn("Mensaje de advertencia");
-        logger.error("Mensaje de error");
+//        logger.debug("Mensaje de depuración");
+//        logger.warn("Mensaje de advertencia");
+//        logger.error("Mensaje de error");
 
         // EjecutarMinOperaciones();
         // EjecutarAgruparPersonas();
@@ -25,6 +26,8 @@ public class Main {
 
         // EjecutarArray();
         // EjecutarSuma();
-        // EjecutarDiagonal();
+         // EjecutarDiagonal();
+
+
     }
 }
