@@ -9,6 +9,7 @@ import static umg.progra3.Clases.ConvertirArregloAMatriz.EjecutarConvertirArregl
 import static umg.progra3.Clases.MinOperaciones.EjecutarMinOperaciones;
 import static umg.progra3.Clases.OrdenarElementosFrecuencia.EjecutarOrdenarElementosFrecuencia;
 import static umg.progra3.ejercicios.EjercicioArray.EjecutarDiagonal;
+import static umg.progra3.ejercicios.EjercicioLinkedList.*;
 
 
 public class Main {
@@ -27,7 +28,9 @@ public class Main {
         // EjecutarArray();
         // EjecutarSuma();
          // EjecutarDiagonal();
-
-
+        
+        eliminarDuplicados();
+        invertirElemento();
+        unirListas();
     }
 }
