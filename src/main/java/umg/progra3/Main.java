@@ -2,7 +2,10 @@ package umg.progra3;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import umg.progra3.ejemploLombok.Persona;
 import umg.progra3.ejercicios.EjercicioArray;
+
+import java.util.Date;
 
 import static umg.progra3.Clases.AgruparPersonas.EjecutarAgruparPersonas;
 import static umg.progra3.Clases.ConvertirArregloAMatriz.EjecutarConvertirArregloAMatriz;
@@ -29,8 +32,19 @@ public class Main {
         // EjecutarSuma();
          // EjecutarDiagonal();
         
-        eliminarDuplicados();
-        invertirElemento();
-        unirListas();
+//        eliminarDuplicados();
+//        invertirElemento();
+//        unirListas();
+
+        ejemploLombok();
+
+    }
+
+    public static void ejemploLombok() {
+        Persona persona = new Persona("Oliver","Godoy",new Date(90,5,15));
+        persona.setAddress("Jutiapa");
+        persona.setCity("Guatemala");
+
+        logger.info("Información " + persona);
     }
 }
