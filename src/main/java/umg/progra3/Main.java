@@ -3,16 +3,8 @@ package umg.progra3;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import umg.progra3.ejemploLombok.Persona;
-import umg.progra3.ejercicios.EjercicioArray;
 
 import java.util.Date;
-
-import static umg.progra3.Clases.AgruparPersonas.EjecutarAgruparPersonas;
-import static umg.progra3.Clases.ConvertirArregloAMatriz.EjecutarConvertirArregloAMatriz;
-import static umg.progra3.Clases.MinOperaciones.EjecutarMinOperaciones;
-import static umg.progra3.Clases.OrdenarElementosFrecuencia.EjecutarOrdenarElementosFrecuencia;
-import static umg.progra3.ejercicios.EjercicioArray.EjecutarDiagonal;
-import static umg.progra3.ejercicios.EjercicioLinkedList.*;
 
 
 public class Main {

@@ -1,4 +1,4 @@
-package umg.progra3.Clases;
+package umg.progra3.clases;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedList;

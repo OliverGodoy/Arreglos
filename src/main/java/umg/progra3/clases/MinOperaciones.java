@@ -1,4 +1,4 @@
-package umg.progra3.Clases;
+package umg.progra3.clases;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
