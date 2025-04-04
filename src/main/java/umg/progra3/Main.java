@@ -2,9 +2,12 @@ package umg.progra3;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import umg.progra3.clases.ClaseArboles;
 import umg.progra3.ejemploLombok.Persona;
 
 import java.util.Date;
+
+import static umg.progra3.ejercicios.EjercicioTreeSetAndMap.*;
 
 
 public class Main {
@@ -28,7 +31,10 @@ public class Main {
 //        invertirElemento();
 //        unirListas();
 
-        ejemploLombok();
+        //ejemploLombok();
+        AnalisisFrecuenciaPalabras();
+        RastreadorVersion();
+        GestorEvento();
 
     }
 
